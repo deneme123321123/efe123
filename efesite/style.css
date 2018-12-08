@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background:url("img/arkaplan.png");
+    background-repeat: no-repeat;
+}
+#container{
+    box-shadow: 0 2px 8px 2px gray;
+    width: 1050px;
+    height: 730px;
+    background: #FFFFFF; 
+    margin:auto;
+    margin-top: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+    
+    
+}
+
+.center{
+right:320px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    
+}
+.resim{
+    width: 40px;
+    height: 40px;
+    
+}
+li{
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+#background-trans{
+    width: 1050px;
+    height: 156px;
+    background: #ECF1F5;
+    border-top-left-radius: 30px;
+}
+li a{ /*düz sıradaki linkler*/
+    
+    display: block;
+    background: #0C63A9;
+    min-width: 140px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover{
+    background: #19C549;
+}
+li a .resim{
+margin-top: 4px;
+}
+
+li:hover ul a{ /*dropdown stilleri*/
+background: #f3f3f3;
+color: black;
+height: 40px;
+line-height: 40px;
+}
+li ul{
+    display: none;
+}
+li:hover ul a:hover{
+    background: #19C549;
+    color: #fff;
+}
+li ul li{
+    display: block;
+    float: none;
+    
+}
+li:hover a{
+    background: #19C549;
+}
+li ul li a{
+    text-align: left;
+    min-width: 100px;
+    padding: 0 20px;
+}
+ ul li a:hover + .hidden,.hidden:hover{
+ display: block;
+ }
